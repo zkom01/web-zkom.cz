@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="shortcut icon" href="./img/ico.png" type="image/x-icon">
@@ -10,57 +10,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css?v=<?php echo filemtime('./style.css');?>">
-  <!-- script pro hamburger menu defer = načte se až se načte celá stránka -->
-  <script src="./js/AI.js?v=<?php echo filemtime('./js/AI.js'); ?>" defer></script>
+  <link rel="stylesheet" href="./style.css?v=<?php echo filemtime('./style.css');?>"> 
 
 </head>
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar" aria-label="Hlavní navigace">
-  <div class="nav-inner">
-    <button class="nav-hamburger" id="navHamburger" aria-label="Otevřít menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="nav-links-wrap" id="navLinks">
-      <a href="#" class="nav-link active" data-section="top">Úvod</a>
-      <div class="nav-divider"></div>
-      <a href="#technologie" class="nav-link" data-section="technologie">Technologie</a>
-      <a href="#projekty" class="nav-link" data-section="projekty">Projekty</a>
-      <a href="#zkusenosti" class="nav-link" data-section="zkusenosti">Zkušenosti</a>
-      <a href="#certifikace" class="nav-link" data-section="certifikace">Certifikace</a>
-      <div class="nav-divider"></div>
-      <a href="#kontakt" class="nav-link" data-section="kontakt">Kontakt</a>
-    </div>
-  </div>
-</nav>
-
-<!-- AI CHAT BUTTON -->
-<button class="ai-btn" onclick="toggleAI()" aria-label="Otevřít AI asistenta" title="Zeptej se AI">✦</button>
-
-<!-- AI CHAT PANEL -->
-<div class="ai-panel" id="aiPanel" role="dialog" aria-label="AI asistent">
-  <div class="ai-panel-header">
-    <span class="ai-dot"></span>
-    AI Asistent · Portfolio
-  </div>
-  <div class="ai-messages" id="aiMessages">
-    <div class="ai-msg bot">Ahoj! Jsem AI asistent. Zeptej se mě na cokoli o Zdeňkovi — zkušenosti, projekty nebo dovednosti. 👋</div>
-  </div>
-  <div class="ai-suggestions" id="aiSuggestions">
-    <button class="ai-suggestion" onclick="askSuggestion(this)">Co umí Zdeněk?</button>
-    <button class="ai-suggestion" onclick="askSuggestion(this)">Jaké má projekty?</button>
-    <button class="ai-suggestion" onclick="askSuggestion(this)">Hledá práci?</button>
-    <button class="ai-suggestion" onclick="askSuggestion(this)">Kde ho kontaktovat?</button>
-  </div>
-  <div class="ai-input-row">
-    <input class="ai-input" id="aiInput" type="text" placeholder="Napiš otázku..." onkeydown="if(event.key==='Enter') sendAI()">
-    <button class="ai-send" onclick="sendAI()" aria-label="Odeslat">→</button>
-  </div>
-</div>
 
 <div class="grid-bg"></div>
 
@@ -90,7 +43,7 @@
           </p>
           <div class="hero-links">
             <a href="https://www.linkedin.com/in/zdenek-komarek/" target="_blank" class="btn btn-primary">
-              LinkedIn profil →
+              LinkedIn profil  →
             </a>
             <a href="https://github.com/zkom01" target="_blank" class="btn btn-ghost">
               GitHub →
@@ -103,7 +56,7 @@
   </header>
 
   <!-- SKILLS -->
-  <section id="technologie">
+  <section>
     <div class="section-header">
       <span class="section-num">01</span>
       <h2 class="section-title">Technologie</h2>
@@ -126,7 +79,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projekty">
+  <section>
     <div class="section-header">
       <span class="section-num">02</span>
       <h2 class="section-title">Projekty</h2>
@@ -192,7 +145,7 @@
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="zkusenosti">
+  <section>
     <div class="section-header">
       <span class="section-num">03</span>
       <h2 class="section-title">Zkušenosti</h2>
@@ -226,7 +179,7 @@
   </section>
 
   <!-- CERTS -->
-  <section id="certifikace">
+  <section>
     <div class="section-header">
       <span class="section-num">04</span>
       <h2 class="section-title">Certifikace</h2>
@@ -261,7 +214,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="kontakt" style="border-bottom: none;">
+  <section style="border-bottom: none;">
     <div class="contact-block">
       <div>
         <div class="contact-title">Pojďme se spojit.</div>
@@ -283,7 +236,6 @@
     <span>Bedihošť, CZ</span>
   </footer>
 </div>
-
 
 </body>
 </html>
