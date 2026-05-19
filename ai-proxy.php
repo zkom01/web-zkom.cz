@@ -1,5 +1,13 @@
 <?php
 // ── Anthropic API Proxy ──
+// Načteme konfiguraci (pokud soubor existuje)
+if (file_exists('config.php')) {
+    require_once 'config.php';
+}
+
+// Zkontrolujeme, zda je konstanta definovaná
+$apiKey = defined('ANTHROPIC_API_KEY') ? ANTHROPIC_API_KEY : '';
+
 if (empty($apiKey)) {
     die("Chyba: Anthropic API klíč není nakonfigurován.");
 }
