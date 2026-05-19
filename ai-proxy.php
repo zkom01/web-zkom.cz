@@ -1,9 +1,5 @@
 <?php
 // ── Anthropic API Proxy ──
-if (file_exists('config.php')) {
-    require_once 'config.php';
-}
-$apiKey = defined('ANTHROPIC_API_KEY') ? ANTHROPIC_API_KEY : '';
 if (empty($apiKey)) {
     die("Chyba: Anthropic API klíč není nakonfigurován.");
 }
