@@ -1,7 +1,12 @@
 <?php
 // ── Anthropic API Proxy ──
-// Vlož sem svůj API klíč z https://console.anthropic.com/
-define('ANTHROPIC_API_KEY', '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');
+if (file_exists('config.php')) {
+    require_once 'config.php';
+}
+$apiKey = defined('ANTHROPIC_API_KEY') ? ANTHROPIC_API_KEY : '';
+if (empty($apiKey)) {
+    die("Chyba: Anthropic API klíč není nakonfigurován.");
+}
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
