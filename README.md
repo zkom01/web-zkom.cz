@@ -1,6 +1,6 @@
-﻿# 🤖 web-zkom.cz — AI-Generated Portfolio
+﻿# 🤖 web-zkom.cz
 
-> **Tento projekt byl celý vygenerován umělou inteligencí (Claude od Anthropic).**
+> **Tento projekt byl vygenerován umělou inteligencí (Claude od Anthropic).**
 > Kód, design i obsah vznikly prostřednictvím AI.
 
 [![AI Generated](https://img.shields.io/badge/Generated%20by-Claude%20AI-blueviolet?style=flat-square&logo=anthropic)](https://www.anthropic.com)
@@ -22,7 +22,7 @@ Web prezentuje technologie, projekty, pracovní zkušenosti a certifikace.
 
 ## 🤖 Jak byl projekt vytvořen?
 
-Celý web — včetně HTML struktury, CSS stylů, PHP logiky a JavaScript funkcionality — byl vygenerován pomocí **Claude (Anthropic AI)** na základě textového popisu požadavků.
+Celý web — včetně HTML struktury, CSS stylů, PHP logiky a JavaScript funkcionality — byl vygenerován pomocí **Claude (Anthropic AI)** na základě textového popisu požadavků. Byly nutné drobné úpravy.
 
 Tento projekt slouží jako ukázka toho, co lze dnes s AI nástroji dosáhnout při tvorbě webových prezentací — včetně integrace živého AI asistenta přímo do stránky.
 
